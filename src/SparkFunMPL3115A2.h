@@ -88,13 +88,13 @@ public:
   void setModeActive(); // Start taking measurements!
   void setOversampleRate(byte); // Sets the # of samples from 1 to 128. See datasheet.
   void enableEventFlags(); // Sets the fundamental event flags. Required during setup.
-
+  void toggleOneShot();
+	
   //Public Variables
 
 private:
   //Private Functions
 
-  void toggleOneShot();
   byte IIC_Read(byte regAddr);
   void IIC_Write(byte regAddr, byte value);
 
