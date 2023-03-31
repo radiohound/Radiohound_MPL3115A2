@@ -28,7 +28,7 @@
  .setModeActive() Start taking measurements!
  .setOversampleRate(byte) Sets the # of samples from 1 to 128. See datasheet.
  .enableEventFlags() Sets the fundamental event flags. Required during setup.
- 
+ .setSeaPressure(float SLP) Lets you set Sea Level Pressure in hPa for more accuracy (from Adafruit)
   Updated by PaulZC: October 19th, 2019
   
   */
