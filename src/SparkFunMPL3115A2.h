@@ -11,8 +11,8 @@
  
  */
  
-#ifndef _SPARKFUN_MPL3115A2_H_ 
-#define _SPARKFUN_MPL3115A2_H_ 
+#ifndef _Radiohound_MPL3115A2_H_ 
+#define _Radiohound_MPL3115A2_H_ 
 
 #include <Arduino.h>
 
