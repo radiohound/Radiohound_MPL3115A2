@@ -270,6 +270,23 @@ void MPL3115A2::toggleOneShot(void)
   IIC_Write(CTRL_REG1, tempSetting);
 }
 
+/*!
+ *  @brief  Set the local sea level pressure
+ *  @param SLP sea level pressure in hPa
+ */
+void MPL3115A2::setSeaPressure(float SLP) {
+  // multiply by 100 to convert hPa to Pa
+  // divide by 2 to convert to 2 Pa per LSB
+  // convert to integer
+  uint16_t bar = SLP * 50;
+
+  // write result to register
+  uint8_t buffer[3];
+  buffer[0] = BAR_IN_MSB;
+  buffer[1] = bar >> 8;
+  buffer[2] = bar & 0xFF;
+  _i2cPort->write(buffer, 3);
+}
 
 // These are the two I2C functions in this sketch.
 byte MPL3115A2::IIC_Read(byte regAddr)
