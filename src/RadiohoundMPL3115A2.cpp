@@ -35,7 +35,7 @@
 
 #include <Wire.h>
 
-#include "SparkFunMPL3115A2.h"
+#include "RadiohoundMPL3115A2.h"
 
 MPL3115A2::MPL3115A2()
 {
