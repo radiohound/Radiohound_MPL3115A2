@@ -88,7 +88,8 @@ public:
   void setModeActive(); // Start taking measurements!
   void setOversampleRate(byte); // Sets the # of samples from 1 to 128. See datasheet.
   void enableEventFlags(); // Sets the fundamental event flags. Required during setup.
-  void toggleOneShot();
+  void toggleOneShot(); 
+  void setSeaPressure(float SLP); // Lets you enter your Sea Level Pressure in hPa for more accurate readings
 	
   //Public Variables
 
