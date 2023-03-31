@@ -21,6 +21,7 @@ readTempF	KEYWORD2
 setModeBarometer	KEYWORD2
 setModeAltimeter	KEYWORD2
 setModeStandby	KEYWORD2
+setSeaPressure KEYWORD2
 setModeActive	KEYWORD2
 setOversampleRate	KEYWORD2
 enableEventFlags	KEYWORD2
